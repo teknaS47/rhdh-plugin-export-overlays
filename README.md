@@ -135,8 +135,11 @@ The repository includes an automated smoke testing workflow that verifies plugin
 
 **Triggering smoke tests:**
 - After `/publish`: Smoke tests run automatically upon successful publish completion
-- Manual testing: Use `/smoketest` comment on the PR to rerun the smoke tests using the latest published artifacts
-  - For `/smoketest` command, a previous successful `/publish` run is required
+- Manual testing: Use one of these comments on the PR to rerun smoke tests using the latest published artifacts:
+  - `/smoketest` (default image derived from PR target branch)
+  - `/smoketest <tag>` (uses `quay.io/rhdh-community/rhdh:<tag>`)
+    - Allowed tags: `pr-4907`, `pr-4929-90eff067`, `next`, `next-1.10-244a2755`, `next-8a0d43e7`
+  - A previous successful `/publish` run is required
 
 **Smoke testing workflow steps:**
 1. **Resolve metadata**: Retrieves published OCI references and PR metadata from the `published-exports` artifact
@@ -151,6 +154,16 @@ If your plugin configuration (in `metadata/*.yaml`) uses environment variables (
 
 - **Results** are reported via PR comment and in the status check. The complete container logs are also available, in the `smoke-tests/run` step.
 
+#### Overriding Backstage Compatibility
+
+When a workspace's upstream Backstage version (in `source.json`) differs from the RHDH target version (in `versions.json`), you need to override the compatibility before publishing. Comment on your PR:
+
+```
+/override-backstage
+```
+
+This creates `backstage.json` with the target version and updates all metadata OCI tags to match. After the override completes, run `/publish` to build the images.
+
 #### Manual Testing
 
 - To trigger a build of the OCI image for the plugins in a PR, comment: `/publish`.
@@ -161,3 +174,17 @@ If your plugin configuration (in `metadata/*.yaml`) uses environment variables (
 #### Once Testing Is Complete:
 - If the plugin works with RHDH (either via automatic or manual testing), **change the label** to `tested`
 - Once the PR is merged, the final OCI artifact will be published with the tag: `bs_<backstage_version>__<plugin_version>`
+
+## E2E coverage anchors
+
+Workspaces with E2E tests collect Istanbul coverage from the instrumented plugin running inside RHDH and upload it to this repository's Codecov project (one `e2e-<workspace>` flag per workspace).
+
+Each `workspaces/<workspace>/coverage-anchors/` directory holds one empty, static file per deployed plugin, named after its scalprum name. Codecov only keeps coverage for paths that exist in this repository's git tree, but the plugins' real sources live upstream — so `scripts/remap-coverage.cjs` concatenates each plugin's coverage onto its anchor (line ranges shifted; the aggregated percentage is preserved exactly). Only the path's existence matters; file content and length are never validated.
+
+These anchors never change with plugin versions. Regenerate them only when a new plugin gains a metadata `Package` entity:
+
+```bash
+./scripts/generate-coverage-anchors.sh <workspace>
+```
+
+See `scripts/generate-coverage-anchors.sh` and `codecov.yml` for the full mechanism.
