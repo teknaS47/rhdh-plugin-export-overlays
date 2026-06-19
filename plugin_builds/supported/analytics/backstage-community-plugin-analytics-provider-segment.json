@@ -1,8 +1,8 @@
 {
   "backstage-community-plugin-analytics-provider-segment": {
     "workspacePath": "analytics/plugins/analytics-provider-segment",
-    "registryReference": "quay.io/rhdh/backstage-community-plugin-analytics-provider-segment:1.11--1.27.0",
-    "digest": "sha256:7f115f49166506ed285ec95bc4324b78cdad5f2284271265a584e79998b06c10",
+    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-analytics-provider-segment:bs_1.49.4__1.27.0",
+    "digest": "sha256:60193fc5f56758fe8bd013bf81d8286e8bec46fc8633ed6caa4b679bc763c822",
     "build-date": "2026-06-02T17:19:59Z",
     "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/main @ 710868b6ee9c4a596c5e3b5b5988193f2b8873ec",
     "midstream": "https://gitlab.cee.redhat.com/rhidp/rhdh-plugin-catalog/-/commits/rhdh-1-rhel-9",

@@ -1,8 +1,8 @@
 {
   "backstage-plugin-signals": {
     "workspacePath": "backstage/plugins/signals",
-    "registryReference": "quay.io/rhdh/backstage-plugin-signals:1.11--0.0.29",
-    "digest": "sha256:85c2b785853467c82339972bb54c61649f86a759bea1d1af46afa5cf2db599d3",
+    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-signals:bs_1.49.4__0.0.29",
+    "digest": "sha256:f942c76b690226dabce2554d951c4eef5092ad5289953908b9592766b939f25e",
     "build-date": "2026-06-02T17:30:32Z",
     "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/main @ 8d3f439ea50a23a136def6fb82466d7ce49cbf3f",
     "midstream": "https://gitlab.cee.redhat.com/rhidp/rhdh-plugin-catalog/-/commits/rhdh-1-rhel-9",
