@@ -671,7 +671,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:427c59dc57b85328d2596f790314b7fd920a9876a0eefdc11c1056717392cc51"
+          "digest": "sha256:b585c845cfa7bd18dbed22c2bfd962ed3cf5765bbbf7d6a8c69e7b5f29844f88"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-bulk-import-backend",
@@ -697,7 +697,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:2226c627e323fcb5a1b1a4b439dac7f850fb522b92a56a5654002ae45180815d"
+          "digest": "sha256:c8621816e6ad698b71f8d62bfff9035e5b9145be9659168113957f5e7145d16d"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-bulk-import",
@@ -931,7 +931,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:f6b492ac808fe7e3fd70e0c8f1816b4d5c401ae3c7023cacc179fab26db2601b"
+          "digest": "sha256:2e3efa5c588e797a9aa286d221363d76906605d5deb87625f302aaadd210838c"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-lightspeed-backend",
@@ -957,7 +957,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:56dfb171eb8a9b0244fdfdd5aaf9ed6b3d54ca613362c37bfa7495d2d778e839"
+          "digest": "sha256:25b77f97aca1e62677761a6d30932ad0faba735c0cd3b6a33c24a941a88a3e3f"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-lightspeed",
@@ -1217,7 +1217,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:749ba5026d3d0b0bb8ee17a7a981a4a8fd5205f88688035de4c5ae5f26b1caa3"
+          "digest": "sha256:29b668977fa089a444e293286b88353b3046b987af590405f70f0c4ce74a7ddd"
         }
       },
       "package": "@red-hat-developer-hub/backstage-plugin-quickstart",
