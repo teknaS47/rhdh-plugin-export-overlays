@@ -1,13 +1,13 @@
 {
   "backstage-plugin-signals": {
     "workspacePath": "backstage/plugins/signals",
-    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-signals:bs_1.49.4__0.0.29",
-    "digest": "sha256:f942c76b690226dabce2554d951c4eef5092ad5289953908b9592766b939f25e",
+    "registryReference": "ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-signals:bs_1.52.0__0.0.32",
+    "digest": "sha256:4c1d7157b5a732a768d2740c89d1b845a90c252e8a58b4d8f02b1ee2135be5eb",
     "build-date": "2026-06-02T17:30:32Z",
     "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/main @ 8d3f439ea50a23a136def6fb82466d7ce49cbf3f",
     "midstream": "https://gitlab.cee.redhat.com/rhidp/rhdh-plugin-catalog/-/commits/rhdh-1-rhel-9",
     "vcs-ref": "b93b7dcd7aa784d5faa9ef98d753bd9643532ce1",
     "support": "tech-preview",
-    "io.backstage.dynamic-packages": "W3siYmFja3N0YWdlLXBsdWdpbi1zaWduYWxzIjp7Im5hbWUiOiJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzLWR5bmFtaWMiLCJ2ZXJzaW9uIjoiMC4wLjI5IiwiYmFja3N0YWdlIjp7InJvbGUiOiJmcm9udGVuZC1wbHVnaW4iLCJwbHVnaW5JZCI6InNpZ25hbHMiLCJwbHVnaW5QYWNrYWdlcyI6WyJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1iYWNrZW5kIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1ub2RlIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1yZWFjdCJdfSwicmVwb3NpdG9yeSI6eyJ0eXBlIjoiZ2l0IiwidXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL2JhY2tzdGFnZS9iYWNrc3RhZ2UiLCJkaXJlY3RvcnkiOiJwbHVnaW5zL3NpZ25hbHMifSwibGljZW5zZSI6IkFwYWNoZS0yLjAifX1d"
+    "io.backstage.dynamic-packages": "W3siYmFja3N0YWdlLXBsdWdpbi1zaWduYWxzIjp7Im5hbWUiOiJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzLWR5bmFtaWMiLCJ2ZXJzaW9uIjoiMC4wLjMyIiwiYmFja3N0YWdlIjp7InJvbGUiOiJmcm9udGVuZC1wbHVnaW4iLCJwbHVnaW5JZCI6InNpZ25hbHMiLCJwbHVnaW5QYWNrYWdlcyI6WyJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1iYWNrZW5kIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1ub2RlIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1yZWFjdCJdfSwicmVwb3NpdG9yeSI6eyJ0eXBlIjoiZ2l0IiwidXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL2JhY2tzdGFnZS9iYWNrc3RhZ2UiLCJkaXJlY3RvcnkiOiJwbHVnaW5zL3NpZ25hbHMifSwibGljZW5zZSI6IkFwYWNoZS0yLjAifX1d"
   }
 }

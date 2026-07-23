@@ -1,6 +1,6 @@
 {
-  "source-repo": "https://github.com/teknaS47/rhdh-plugin-export-overlays/tree/main @ 582cfa50",
-  "build-date": "2026-06-23T05:48:05Z",
-  "backstage-version": "1.49.4",
+  "source-repo": "https://github.com/teknaS47/rhdh-plugin-export-overlays/tree/main @ 4ad9c159",
+  "build-date": "2026-07-23T09:34:28Z",
+  "backstage-version": "1.52.0",
   "rhdh-version": "1.11"
 }
