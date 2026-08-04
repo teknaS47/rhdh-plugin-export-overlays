@@ -17,7 +17,7 @@ metadata:
 spec:
   packageName: "@backstage/plugin-notifications-backend-module-email"
   # Tag: bs_1.52.0__0.3.22, Build date: 2026-05-21T21:16:42Z
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-notifications-backend-module-email@sha256:5684b5e7af211589319dec3ae9923a230375abafeffcb8cf3a4b432283a50ed5"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-notifications-backend-module-email@sha256:9ce779f0310da977d3d5791aeee6f9dfcfeb14d40b9f634c8a1b4ac0a6164cea"
   version: 0.3.22
   backstage:
     role: backend-plugin-module
