@@ -17,9 +17,9 @@ metadata:
     - automation
 spec:
   packageName: "@red-hat-developer-hub/backstage-plugin-orchestrator-backend-module-loki"
-  # Tag: bs_1.52.0__1.4.0, Build date: 2026-05-22T15:15:55Z
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-orchestrator-backend-module-loki@sha256:3ae392c743bf18026ad50dab2f582655ca8639c5dc460fa6c286db2593971ab9"
-  version: 1.4.0
+  # Tag: bs_1.52.0__1.4.1, Build date: 2026-05-22T15:15:55Z
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-orchestrator-backend-module-loki@sha256:e720b40957336e73b931afba05432e6509a3e964337a7f1315f31c35c493b02f"
+  version: 1.4.1
   backstage:
     role: backend-plugin-module
     supportedVersions: 1.52.0

@@ -15,9 +15,9 @@ metadata:
     backstage.io/source-location: url:https://github.com/redhat-developer/rhdh-plugins/tree/main/workspaces/quickstart
 spec:
   packageName: '@red-hat-developer-hub/backstage-plugin-quickstart'
-  # Tag: bs_1.52.0__2.0.0, Build date: 2026-06-02T17:26:08Z
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-quickstart@sha256:f255bb5f26dbcc84f5686b2641e729914678c3e0e23df369b1e3ca6d9c4b9d46"
-  version: 2.0.0
+  # Tag: bs_1.52.0__2.0.1, Build date: 2026-06-02T17:26:08Z
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-quickstart@sha256:650a4581e7f476955e20fc1d94233eeb1b1ef0c6e6372b4a7dde4648eaa76182"
+  version: 2.0.1
   backstage:
     role: frontend-plugin
     supportedVersions: 1.52.0
@@ -126,16 +126,21 @@ spec:
                 - importName: quickstartTranslations
                   module: Alpha
                   ref: quickstartTranslationRef
+              # Legacy exports require `module: Legacy` — they are not available on the default module.
               mountPoints:
                 - mountPoint: application/provider
                   importName: QuickstartDrawerProvider
+                  module: Legacy
                 - mountPoint: application/internal/drawer-state
                   importName: QuickstartDrawerStateExposer
+                  module: Legacy
                 - mountPoint: application/internal/drawer-content
                   importName: QuickstartDrawerContent
+                  module: Legacy
                   config:
                     id: quickstart
                 - mountPoint: global.header/help
                   importName: QuickstartButton
+                  module: Legacy
                   config:
                     priority: 100
