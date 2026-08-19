@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage/plugin-catalog-backend-module-bitbucket-server"
   # Tag: bs_1.52.0__0.5.12
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-catalog-backend-module-bitbucket-server@sha256:857aa525b01ae2b6e4f7ae432604e4b3d2d45aac3c9b8545f78c0ff2a07985a6"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-catalog-backend-module-bitbucket-server@sha256:e988273efd226851272836b56962d45ba20f2e3042ac0428a8a69fc425022831"
   version: 0.5.12
   backstage:
     role: backend-plugin-module

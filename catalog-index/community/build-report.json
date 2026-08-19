@@ -161,7 +161,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:c858e77fbf4fe90445817965501093d72b14c9c2db9566ea28f53535be33303a"
+          "digest": "sha256:869f10246be9da06058eb7acdfabe8f4e93e0a1e4ead69d6630ae61651ee662d"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-cloud",
@@ -187,7 +187,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:857aa525b01ae2b6e4f7ae432604e4b3d2d45aac3c9b8545f78c0ff2a07985a6"
+          "digest": "sha256:e988273efd226851272836b56962d45ba20f2e3042ac0428a8a69fc425022831"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-server",
@@ -213,7 +213,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:3c0d950350464216102bb41c05d3376ed0ee38eadde6da018e5e57d14d2fe7fa"
+          "digest": "sha256:e8fcdbe44fb2a67af08843718759e231eac4cc2ca8c5b5b6e10fd2cab42bbbb1"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-azure",
@@ -239,7 +239,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:f812f0f995090b109e44d883385f327f3acdc2d671677f7eace4b9f7240fa712"
+          "digest": "sha256:62aab9c6fe14c82780794964f068c3d3a7f453fca88c12188c0d9fba353977d3"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-bitbucket-cloud",
@@ -265,7 +265,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:d1606d663dafebe56f5b04840e0de7a98e2093f74243b865459eabd2acb4efc3"
+          "digest": "sha256:368506d5bcba07f4a1e8e748d7aaa4e4dab7fac265c2058a2b459910d4164df7"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-bitbucket-server",
@@ -291,7 +291,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:c975447a671a075daf890c2f93e39617776d33ca69fdfa9792998a87891715a7"
+          "digest": "sha256:929551cd07280bb8292e3fa6e5e15057783e5caeb1eebaee1ad7a48549d1d5b8"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-gerrit",

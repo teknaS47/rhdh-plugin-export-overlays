@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage/plugin-scaffolder-backend-module-bitbucket-server"
   # Tag: bs_1.52.0__0.2.22
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-bitbucket-server@sha256:d1606d663dafebe56f5b04840e0de7a98e2093f74243b865459eabd2acb4efc3"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-scaffolder-backend-module-bitbucket-server@sha256:368506d5bcba07f4a1e8e748d7aaa4e4dab7fac265c2058a2b459910d4164df7"
   version: 0.2.22
   backstage:
     role: backend-plugin-module

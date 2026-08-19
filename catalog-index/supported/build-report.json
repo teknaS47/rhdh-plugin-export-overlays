@@ -125,7 +125,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:b1c59fd75906544688333dbebb98ce4990553c1ef4780fda07339ed1d4dbb359"
+          "digest": "sha256:cb3c6f39efe9d4b852342a1a8f514382ae5fa328ad1b5ba22ca973705da00b3b"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-github-org",
@@ -151,7 +151,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:6ea14e3adcdecdc1a90b82d05f75fbbfcb91c7e8d40233ef1230a93e9d171bc8"
+          "digest": "sha256:9b763f0437688980a953096f00c557d3984e20f665095b4d97ec3bdfb35b2e43"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-github",
@@ -177,7 +177,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:cde6b13a81613b3cfb0934aad842faba733852c697ad2ae7c61a4c608e81b172"
+          "digest": "sha256:88008e7537e182e4d7d67b3eb1a1875c1fc0f5b0a8f78085fcb0b75dce7b611a"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-gitlab-org",
@@ -203,7 +203,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:061ab71a3e4e1d69e4428d97e480ec9b4f424ef32610c13492f5e41d9b4d297b"
+          "digest": "sha256:a1444f437b05c15c5007915db23c183bf0b198efca8a69301b61cf85d6be26ed"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-gitlab",
@@ -229,7 +229,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:6f964c8f5ceab71dbd3f69e99ad91c58eeee0033e159e6b9472760ba71391f98"
+          "digest": "sha256:444244615dbb334ef3b6e15d3fc16536c4b275f3ab72bffbd2c6f98b25b2d985"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-ldap",
@@ -255,7 +255,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:c9705a3f6cbdc3c0e297cd9a648541b260593fd97eb97115b7881e8b9ad55973"
+          "digest": "sha256:578b5e974f4be6be98ca33ceec79dee8b05c8cf30c3415d0fc8cd2d637f7ec7f"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-msgraph",
@@ -281,7 +281,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:8cb1dc0bab0a8745659ea41fc0f2f8655dc8b49dd0a87671b63b7e0a4ca21a7c"
+          "digest": "sha256:dd275da1e72e633c8825bd77c2c2bd26bf40f12fdfce1034657f0027ffb64c3a"
         }
       },
       "package": "@backstage/plugin-events-backend-module-github",
@@ -307,7 +307,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:47af8dca961d793b2f8c63a6428d3978590be3ad74e0b6858e70bd0870c4a90a"
+          "digest": "sha256:0863eb16621fd6f6cfd0fe0f753ffe495e5a9b91458018a0e560b17306da91a5"
         }
       },
       "package": "@backstage/plugin-events-backend-module-gitlab",
@@ -333,7 +333,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ae3cca181b8d3ade2bc1157438e57d1e36681ebb20ba8de930a6a6314791697e"
+          "digest": "sha256:d8d646b5e53e29df4264dd51ba3c9656eb8c45d7d57e49878a8cd9fd3deb49ee"
         }
       },
       "package": "@backstage/plugin-kubernetes-backend",
@@ -359,7 +359,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:d1423ca7540a4450a97166a3e5af6a0a781d8b9eee876f6dc01ee1c183f32b5c"
+          "digest": "sha256:32daff673ea3f2fc29a6cf6abb36774b63e54a0f2e7d5df70cc4803cd1a3485b"
         }
       },
       "package": "@backstage/plugin-kubernetes",
@@ -385,7 +385,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:b54a9eb5193e30c21e2d12101e404fc7fe84a7dd1b50b93d2fce3b420831851d"
+          "digest": "sha256:a4267aa853341d3199f21af75f133fc848191a9ab5fb3e51b39afeaec3d97a19"
         }
       },
       "package": "@backstage/plugin-notifications-backend-module-email",
@@ -411,7 +411,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:429abd69d89985380ee3271f45dcd84adffd4a4716cfe7f132f5a8dc929d9bb8"
+          "digest": "sha256:06716455ad9651039086103aafba7c94c9dd57f347b685130c66d9dae2c2d57d"
         }
       },
       "package": "@backstage/plugin-notifications-backend",
@@ -437,7 +437,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:7fc216971163f219555f9a0a83d074e71d8a5049c3ebb6b33799db67fa21a3f3"
+          "digest": "sha256:e123e4215d555b63498624a0956c62f212d391f9431c6c90799e8a8efdccb1e8"
         }
       },
       "package": "@backstage/plugin-notifications",
@@ -463,7 +463,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:a6a9cda2b25b880f57ebd5159efe842de103fcfe85ea317eef014b34ee3661f7"
+          "digest": "sha256:5a675ca880298dabdbfb565c61d83c6ceeb7de6af7c308d6daee2fd2ca9cb667"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-github",
@@ -489,7 +489,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:b9176d9c97969fd2d45fbf874fd24e9551f07e4c45ccd8cc4afa000a726bb84d"
+          "digest": "sha256:0042b03a0871a0a2b4b8a0c6d22b5d061786bf20906a88dd34733c69ea768d95"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-gitlab",
