@@ -17,7 +17,7 @@ metadata:
 spec:
   packageName: '@red-hat-developer-hub/backstage-plugin-homepage'
   # Tag: bs_1.52.0__1.17.1
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-homepage@sha256:6908ebf201aea67dac43d8444f00117c726ed4e7014ab1561892e4e8bba827f4"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-homepage@sha256:52b1baff176c2da2089cb05433a9877d1652e2c3c14aaacc77c47cb0a161a62a"
   version: 1.17.1
   backstage:
     role: frontend-plugin
@@ -93,3 +93,40 @@ spec:
                       sm: { w: 12, h: 3 }
                       xs: { w: 12, h: 3 }
                       xxs: { w: 12, h: 3 }
+    - title: New frontend system (app-next / NFS)
+      content:
+        app:
+          extensions:
+            - page:home:
+                config:
+                  path: /
+            - api:home/visits: true
+            - app-root-element:home/visit-listener: true
+            - home-page-layout:home/dynamic-homepage-layout:
+                config:
+                  customizable: true
+                  widgetLayout:
+                    RhdhTemplateSection:
+                      priority: 300
+                      breakpoints:
+                        xl: { w: 12, h: 5 }
+                        lg: { w: 12, h: 5 }
+                    RhdhEntitySection:
+                      priority: 200
+                      breakpoints:
+                        xl: { w: 12, h: 7 }
+                        lg: { w: 12, h: 7 }
+                    RhdhOnboardingSection:
+                      priority: 100
+                      breakpoints:
+                        xl: { w: 12, h: 6 }
+                        lg: { w: 12, h: 6 }
+        # homepage.defaultWidgets is not supported on NFS yet — uncomment when it is:
+        # homepage:
+        #   defaultWidgets:
+        #     - id: onboarding
+        #       ref: rhdh-onboarding-section
+        #     - id: entity-list
+        #       ref: rhdh-entity-section
+        #     - id: template-list
+        #       ref: rhdh-template-section
