@@ -2,8 +2,8 @@
 # Includes: scorecard frontend/backend, filecheck backend module, and dynamic home page.
 # GitHub, Jira, Dependabot, and OpenSSF backend modules are intentionally excluded.
 plugins:
-  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard:bs_1.52.0__4.1.0
-    disabled: false
+  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard:bs_1.54.6__4.4.1
+    enabled: true
     pluginConfig:
       dynamicPlugins:
         frontend:
@@ -37,10 +37,10 @@ plugins:
                   description: "Checks if the README file exists in the repository"
                   props:
                     aggregationId: "filecheck.readme"
-  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend:bs_1.52.0__4.1.0
-    disabled: false
-  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-filecheck:bs_1.52.0__1.0.1
-    disabled: false
+  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend:bs_1.54.6__4.4.1
+    enabled: true
+  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/red-hat-developer-hub-backstage-plugin-scorecard-backend-module-filecheck:bs_1.54.6__1.1.3
+    enabled: true
     pluginConfig:
       scorecard:
         metricProviders:
@@ -65,9 +65,5 @@ plugins:
             dynamicRoutes:
               - path: /
                 importName: DynamicCustomizableHomePage
-            mountPoints:
-              - mountPoint: home.page/cards
-                importName: EntitySection
-                config:
-                  id: "entity-section"
-                  title: "Entity section"
+  - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-home:bs_1.54.6__0.9.9
+    enabled: true

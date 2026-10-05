@@ -36,7 +36,6 @@ test.describe("Admin > Extensions", () => {
     uiHelper = u;
     extensions = new ExtensionsPage(page, uiHelper);
     await loginHelper.loginAsKeycloakUser();
-    await uiHelper.openSidebarButton("Administration");
     await uiHelper.openSidebar("Extensions");
     await uiHelper.verifyHeading("Extensions");
   });
@@ -44,8 +43,9 @@ test.describe("Admin > Extensions", () => {
   test.describe("Extensions > Catalog", () => {
     // eslint-disable-next-line playwright/expect-expect -- uiHelper.verifyHeading asserts internally
     test("Verify search bar in extensions", async ({ page }) => {
-      await extensions.searchExtensions("Dynatrace");
-      await uiHelper.verifyHeading("DynaTrace");
+      const extension = "Homepage";
+      await extensions.searchExtensions(extension);
+      await uiHelper.verifyHeading(extension);
       await page
         .getByRole("button", {
           name: "Clear Search",
@@ -72,7 +72,7 @@ test.describe("Admin > Extensions", () => {
       await extensions.toggleOption(author);
       await page.keyboard.press(`Escape`);
       await uiHelper.verifyHeading(plugin);
-      await uiHelper.verifyText(` by ${author}`);
+      await uiHelper.verifyText(` by ${author}`, false);
       await page.getByRole("heading", { name: plugin }).click();
       await uiHelper.verifyTableHeadingAndRows([
         "Package name",
@@ -240,7 +240,7 @@ test.describe("Admin > Extensions", () => {
       await extensions.waitForSearchResults(plugin);
       await extensions.clickReadMoreByPluginTitle(
         plugin,
-        "Generally available (GA)",
+        "Generally available (GA)primary",
       );
 
       await uiHelper.clickButton("Actions");
@@ -298,17 +298,17 @@ test.describe("Admin > Extensions", () => {
       await uiHelper.clickByDataTestId("header-tab-0");
       await extensions.clickReadMoreByPluginTitle(
         plugin,
-        "Generally available (GA)",
+        "Generally available (GA)primary",
       );
       await uiHelper.verifyHeading(plugin);
       await page.getByTestId("plugin-actions").click();
       await expect(page.getByLabel("EditPlugin")).toBeVisible();
       await page.getByTestId("disable-plugin").click();
       await expect(page.getByTestId("enable-plugin")).toBeVisible();
-
-      await expect(page.getByRole("alert")).toContainText(
-        `The ${plugin} plugin requires a restart of the backend system to finish installing, updating, enabling or disabling.`,
-      );
+      // Following step is commented out due to the bug in nfs https://redhat.atlassian.net/browse/RHDHBUGS-3701
+      // await expect(page.getByRole("alert")).toContainText(
+      //   `The ${plugin} plugin requires a restart of the backend system to finish installing, updating, enabling or disabling.`,
+      // );
     });
   });
 

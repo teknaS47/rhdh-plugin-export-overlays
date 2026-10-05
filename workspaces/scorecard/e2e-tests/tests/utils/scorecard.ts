@@ -1,4 +1,4 @@
-import { expect, type Page } from "@playwright/test";
+import { expect, type Locator, type Page } from "@playwright/test";
 import type { UIhelper } from "@red-hat-developer-hub/e2e-test-utils/helpers";
 import type { ScorecardMetric, ThresholdRule } from "./types";
 import { DEFAULT_THRESHOLD_LABELS } from "./constants";
@@ -70,24 +70,53 @@ export const DEPENDABOT_METRICS = [
   },
 ] as const;
 
+/**
+ * Temporal fix for https://redhat.atlassian.net/browse/RHDHBUGS-3898.
+ * The entity tab links navigate the document instead of routing client side,
+ * so when opening a tab the sign-in page comes back.
+ */
+async function ensureSignedIn(page: Page, expectedLocator: Locator) {
+  const signIn = page.getByRole("button", { name: "Sign In", exact: true });
+
+  // Wait for whichever renders first - sign in or expected locator
+  const signedOut = await Promise.race([
+    signIn
+      .waitFor({ state: "visible", timeout: 60_000 })
+      .then(() => true)
+      .catch(() => null),
+    expectedLocator
+      .waitFor({ state: "visible", timeout: 60_000 })
+      .then(() => false)
+      .catch(() => null),
+  ]);
+  if (!signedOut) return;
+
+  // The Keycloak SSO session is still alive, so this just lands back on the tab when sign in is clicked.
+  await signIn.click();
+  await expect(expectedLocator).toBeVisible({ timeout: 60_000 });
+}
+
 export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
   const getScorecardCard = (metric: ScorecardMetric) =>
     page
-      .locator("article")
-      .filter({ has: page.locator(`[aria-label="${metric.title}"]`) });
+      .locator('[role="article"]')
+      .filter({ has: page.getByText(metric.title, { exact: true }) });
 
   return {
     getScorecardCard,
     async openTab() {
-      const tab = page.getByRole("tab", { name: "Scorecard" });
+      const tab = page.getByRole("link", { name: "Scorecard" });
       await expect(tab).toBeVisible();
       await tab.click();
+      await ensureSignedIn(page, tab);
     },
     async expectEmptyState() {
       await expect(page.getByText("No scorecards added yet")).toBeVisible();
-      await expect(page.getByRole("article")).toContainText(
-        "Scorecards help you monitor component health at a glance. To begin, explore our documentation for setup guidelines.",
-      );
+      await expect(
+        page.getByText(
+          "Scorecards help you monitor component health at a glance. To begin, explore our documentation for setup guidelines.",
+        ),
+      ).toBeVisible();
       await expect(
         page.getByRole("link", { name: "View documentation" }),
       ).toBeVisible();
@@ -154,10 +183,10 @@ export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
         // Edit button never appeared — already in edit mode.
       }
     },
-    async addWidget(cardName: string) {
+    async addWidget(cardName: string, options?: { exact?: boolean }) {
       await this.enterEditModeIfNeeded();
       await this.openAddWidgetDialog();
-      await this.selectWidget(cardName);
+      await this.selectWidget(cardName, options);
       try {
         await page
           .getByRole("button", { name: "Save" })
@@ -172,8 +201,10 @@ export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
     async openAddWidgetDialog() {
       await page.getByRole("button", { name: "Add widget" }).click();
     },
-    async selectWidget(cardName: string) {
-      await page.getByRole("button", { name: cardName }).click();
+    async selectWidget(cardName: string, options?: { exact?: boolean }) {
+      await page
+        .getByRole("button", { name: cardName, exact: options?.exact })
+        .click();
     },
     async expectNoProgressBar() {
       await expect(
@@ -185,13 +216,15 @@ export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
     },
     async expectAggregatedScorecardVisible(metricTitle: string) {
       await expect(
-        page.locator("article").filter({ hasText: metricTitle }),
+        page.locator('[role="article"]').filter({ hasText: metricTitle }),
       ).toBeVisible({ timeout: 90_000 });
     },
     async getAggregatedScorecardEntityCount(
       metricTitle: string,
     ): Promise<number> {
-      const card = page.locator("article").filter({ hasText: metricTitle });
+      const card = page
+        .locator('[role="article"]')
+        .filter({ hasText: metricTitle });
       const text = await card.textContent();
       const match = text?.match(/(\d+)\s*entities/);
       return match ? Number.parseInt(match[1], 10) : 0;
@@ -200,7 +233,9 @@ export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
       metricTitle: string,
       expectedCount: number,
     ) {
-      const card = page.locator("article").filter({ hasText: metricTitle });
+      const card = page
+        .locator('[role="article"]')
+        .filter({ hasText: metricTitle });
       await expect(card).toContainText(`${expectedCount} entities`);
     },
     async expectFilecheckForEntity(
@@ -220,7 +255,9 @@ export function scorecardHelpers(page: Page, uiHelper: UIhelper) {
       metricTitle: string,
       expectedIconTestId: string,
     ) {
-      const section = page.locator("article").filter({ hasText: metricTitle });
+      const section = page
+        .locator('[role="article"]')
+        .filter({ hasText: metricTitle });
       await expect(section).toBeVisible({ timeout: 60_000 });
       await expect(section.getByRole("progressbar")).toHaveCount(0, {
         timeout: 60_000,
