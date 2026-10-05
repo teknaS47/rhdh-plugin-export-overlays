@@ -15,13 +15,13 @@ metadata:
     backstage.io/source-location: url:https://github.com/backstage/community-plugins/tree/main/workspaces/tech-radar
   tags: []
 spec:
-  packageName: '@backstage-community/plugin-tech-radar'
-  # Tag: bs_1.52.0__1.20.0, Build date: 2026-06-02T17:39:34Z
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-tech-radar@sha256:0401b7134d6410aea376f723575cde98c36f22e767b26476117d86e4b3449cd2"
-  version: 1.20.0
+  packageName: "@backstage-community/plugin-tech-radar"
+  # Tag: bs_1.54.9__1.22.0, Build date: 2026-06-02T17:39:34Z
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-tech-radar@sha256:596b16980e8f3d49ba96c91273529314e1577c058d8e0c4d0c041640d79fcbea"
+  version: 1.22.0
   backstage:
     role: frontend-plugin
-    supportedVersions: 1.52.0
+    supportedVersions: 1.54.6
   author: Red Hat
   support: generally-available
   lifecycle: active

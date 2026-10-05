@@ -16,12 +16,12 @@ metadata:
   tags: []
 spec:
   packageName: "@backstage-community/plugin-acr"
-  # Tag: bs_1.52.0__1.27.0
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-acr@sha256:645312fcf15b21cf7fba3c36900d47c09b74e7828e33d556d7c8e6451a71798c"
-  version: 1.27.0
+  # Tag: bs_1.54.9__1.28.1
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-acr@sha256:de54cf896fc99d2ac55fc958d2fe0d63d2a830b09517f65814641e74e9796e24"
+  version: 1.28.1
   backstage:
     role: frontend-plugin
-    supportedVersions: 1.52.0
+    supportedVersions: 1.54.6
   author: Red Hat
   support: community
   lifecycle: active
@@ -30,15 +30,8 @@ spec:
   appConfigExamples:
     - title: Default configuration
       content:
+        # NFS auto-discovers createFrontendPlugin from the package `./alpha` export.
+        # Do not wire legacy entity.page.image-registry / AcrImagesEntityContent mountPoints.
         dynamicPlugins:
           frontend:
-            backstage-community.plugin-acr:
-              mountPoints:
-                - mountPoint: entity.page.image-registry/cards
-                  importName: AcrImagesEntityContent
-                  config:
-                    layout:
-                      gridColumn: 1 / -1
-                    if:
-                      anyOf:
-                        - isAcrAvailable
+            backstage-community.plugin-acr: {}
