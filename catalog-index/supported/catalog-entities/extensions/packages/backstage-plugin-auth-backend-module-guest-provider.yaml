@@ -18,7 +18,7 @@ metadata:
 spec:
   packageName: "@backstage/plugin-auth-backend-module-guest-provider"
   # Tag: bs_1.54.9__0.2.22
-  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-guest-provider@sha256:1ed8d9ec757ca9497a6bacfcaf15f44206ed13d6d4ffd811ca711f318a79ff0d"
+  dynamicArtifact: "oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-plugin-auth-backend-module-guest-provider@sha256:f7c6127e947431f94d784b6d423fcb8da91a5736a7a44d21a83ae49f56940f12"
   version: 0.2.22
   backstage:
     role: backend-plugin-module

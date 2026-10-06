@@ -21,7 +21,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:88678ec5ea26570aa9ab18785a17daf7aad1414b50a9fe8719f1aadc1f939b0d"
+          "digest": "sha256:6c3f4b656d05a09a32cfd63a77172c20ffd21d27a3aa29d26e1669f2da228db1"
         }
       },
       "package": "@backstage-community/plugin-3scale-backend",
@@ -47,7 +47,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:3d07a6c7c05e1985515d5dd4d5c6bd50f1b79ce3533257db3afe81586b538f87"
+          "digest": "sha256:58010fb505d98b5f3cde3cc04e4313ace91d904be3fc24a9172ce3af309cf78b"
         }
       },
       "package": "@backstage-community/plugin-argocd-backend",
@@ -73,7 +73,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:0e60bf4d0a05d2615030a93ed45e48cb3ab6cd46bcf5008a08f45ac867d57306"
+          "digest": "sha256:0e7e78057ed9af8dd13e84fe6c920a636d2c0511ddbe00b315eae06f8bae210b"
         }
       },
       "package": "@backstage-community/plugin-argocd",
@@ -99,7 +99,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:33f8d50579bd3edd74132acabdf38918565665d5b3421dba5a117473bdedc1c4"
+          "digest": "sha256:183925f16084a8b1373a77ab6a2866d5eab8ab837e02656102d53a484db96921"
         }
       },
       "package": "@backstage-community/plugin-azure-devops-backend",
@@ -125,7 +125,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:60983d1bb55662a9d91a3b0ec531fc8d122b9e5619713e93cee2a08d1dbbdb93"
+          "digest": "sha256:7c55002628e25303a6a8ac580df6b5fc844687b065145bb206c220fc905b8ccd"
         }
       },
       "package": "@backstage-community/plugin-azure-devops",
@@ -151,7 +151,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:375543d4ad64066a6ac5e7ea0b7abef864e391a6917fa3c60053a2ff756a34c2"
+          "digest": "sha256:cef43674e765f1cd274e0fbadf8739e65226e17414329690b5320a1c9267fd41"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-cloud",
@@ -177,7 +177,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:a1ca2d6a593d421257c08985a5ce3625372d0dd126a7e5237df93b8289df5396"
+          "digest": "sha256:da9bb8ae1e2432f9a7dd04a0b713408b950af0affcf74a068d1bb63b68d095ad"
         }
       },
       "package": "@backstage/plugin-catalog-backend-module-bitbucket-server",
@@ -203,7 +203,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:dda6c9b7b207a93ff52ffa50c561e88a312a0be1545069540719c121fbb47cbb"
+          "digest": "sha256:bed7cbbcaab4bda0b1cfa35d935445b7aa05666747555a2c8b96d700fa61e56a"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-azure",
@@ -229,7 +229,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:e4d385a12c80c5a5f5389c365a93a799ba0804e1130c32fe491eb99f2eab895d"
+          "digest": "sha256:73617ddb86a5e9cfdca7a88164d7175d1ab66fc998399dc07cb1a6989afe6325"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-bitbucket-cloud",
@@ -255,7 +255,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:66ed4b3c931a1ecfb0f142eb5a4613f6d5ec772e960ffacd3ed3e03b57733741"
+          "digest": "sha256:3fac8ac4b6ed2e29f92a07985874f4b3d9c9327a645dbcc9c5ea8d59105974bd"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-bitbucket-server",
@@ -281,7 +281,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:741775b196c2432d28f04441d1e68ae6b04436625499c47062b00548bf58324c"
+          "digest": "sha256:611d211af7849559f26be3b99a61c95bfbb5fa4f74a9d9d271880f1a47b755b9"
         }
       },
       "package": "@backstage/plugin-scaffolder-backend-module-gerrit",
@@ -307,7 +307,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:db45a1316df312f5c63d57997769e1d7699c70e6b9409332ac84a601652d3ec7"
+          "digest": "sha256:3d69f0be0df78acd02d6247ab765ae4bd12e0c27740fc012af2faa6e6e291b71"
         }
       },
       "package": "@backstage-community/plugin-dynatrace",
@@ -333,7 +333,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:7eee84f71480a92c46e9a18b823d71bf3008a5d7d4c64f0e1fb7c05c8f72609c"
+          "digest": "sha256:36560a888598ee36e8956946c7d61098da6f68757d72ec37160ad0176bd4bb3b"
         }
       },
       "package": "@backstage-community/plugin-github-actions",
@@ -359,7 +359,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:29a854cfb8ee8329af9cd161ecff536fc480465bd56818552f897f9dfd117a9a"
+          "digest": "sha256:933280f85de2ec70a100ca61cda936e8df7e838b04a98f5e92e39b013f7b98c0"
         }
       },
       "package": "@backstage-community/plugin-github-issues",
@@ -385,7 +385,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ff3ab43dcfd0ee55b2f14c2decfec2cf0f7b355a439c5f701337c8e006b852fc"
+          "digest": "sha256:6a3e7329e3b5937e170b9d3348c5c9c035de6f2a1b279163b89a402fd6c90e0c"
         }
       },
       "package": "@backstage-community/plugin-jenkins-backend",
@@ -411,7 +411,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:18ae2df6ecbbff1974c0d54c9d3667875ce3eca18a570388f1e576841e9fd546"
+          "digest": "sha256:857e069e9f9a057e54bf584e5b67a2eda8f128b5dc1ab57ac74a391536d5d37a"
         }
       },
       "package": "@backstage-community/plugin-jenkins",
@@ -437,7 +437,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:d855e46c61b47a4017d00788196a24feee1e74460eb1b3ce6994a597a0f19acc"
+          "digest": "sha256:47609e284f9d74dae34f1579cb3a5be74055cfcf285f89b0ab7d43e8491cc41e"
         }
       },
       "package": "@backstage-community/plugin-jfrog-artifactory",
@@ -463,7 +463,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:38f6c1a20e9bb626ef4ea4963598b28f433977fc15735ef82ba9ec0ad288d1cd"
+          "digest": "sha256:7226035d5fe95b3e3a3dbee323ca9877c3e8a5e9c12337c7c97f966131654cc1"
         }
       },
       "package": "@backstage-community/plugin-lighthouse",
@@ -489,7 +489,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:b008bb80c694f75ed7cebbd15c2ad80d724c2ecad2343ba3244c9e5606c7b472"
+          "digest": "sha256:15086fd7a91d810be443c195b85bc8181a3b845068c3d621e641223bf3f1f3e9"
         }
       },
       "package": "@backstage-community/plugin-nexus-repository-manager",
@@ -515,7 +515,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:61ab2d16242636195d9a5753cd1a5a52af1d04f7576023e942e145a10a5e4cd8"
+          "digest": "sha256:1caeb236036e2fd7e4e38f2bdb79f1b32f0fe72e35ffcabe52d507581b3417c7"
         }
       },
       "package": "@pagerduty/backstage-plugin-backend",
@@ -541,7 +541,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:3f4b1c086988348c8576434fdc296ca48c8ebe4c6325973c4239c68b825e1834"
+          "digest": "sha256:12e94a6f9379175bb7d89ebd5fac04956aa8d0eae67f720891b02ed2a15751fe"
         }
       },
       "package": "@pagerduty/backstage-plugin",
@@ -567,7 +567,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:4f5df2dd801d446bdf3c05f60d3f68bf3d9916a87444048b60fbffe2ab095c89"
+          "digest": "sha256:4ec0c14c097a36968023af830c26f342435899ccba7841f7de660c8d92d9bfb6"
         }
       },
       "package": "@backstage-community/plugin-quay",
@@ -593,7 +593,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:fa3ca7eb6c374c6cae4df777888825daf4d933a8935784f3074483d252390b7a"
+          "digest": "sha256:0575a1f0a43c730fa9d4ce4328d250c657f9e24008db988acc88dd09df4ba68e"
         }
       },
       "package": "@backstage-community/plugin-scaffolder-backend-module-quay",
@@ -619,7 +619,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:03d57c5e1ba91bcfe197f38b6b24c73d2b08ef232027eeee9fd72f731ef46e37"
+          "digest": "sha256:fec1b150f3140ff93226484e9fdfc2527affb662569a8c985b361c84557a9ea1"
         }
       },
       "package": "@roadiehq/backstage-plugin-argo-cd-backend",
@@ -645,7 +645,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:59b4c89392f5426a1a6153e8a3a7fc7c4683c02d4b04263d8499f90462c32b97"
+          "digest": "sha256:ec4a2cbcf8015d8fd26032af5d06c8605b746b13c3e6047616d98488bc04c62e"
         }
       },
       "package": "@roadiehq/backstage-plugin-datadog",
@@ -671,7 +671,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:dccf7e85f760723d7c63d3fd4e57ee794b9d396b3312e7cf18d25daf11abdc6d"
+          "digest": "sha256:c840746affe21690833e6840ba4d3f73a72a1aabf2005e903f4bb425b4c505b6"
         }
       },
       "package": "@roadiehq/backstage-plugin-github-insights",
@@ -697,7 +697,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:e3c572e22a5ade1dcf84bf2a2cb4fc6936bdbd2b2f7b76b6bbceda040a2b9785"
+          "digest": "sha256:3a3a27c085df4c140c2beec77f4d503fda66d90f7fd4275000471c0bfa1ae3f0"
         }
       },
       "package": "@roadiehq/backstage-plugin-github-pull-requests",
@@ -723,7 +723,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:0c9364fae2d2dd79157566252a5a04ebe56a55a3b7abcef0a186ddb4614a4199"
+          "digest": "sha256:debcd0c01650f39b97dd06b5f76dca08d996db1a82ee81b2083a720ee11c2d65"
         }
       },
       "package": "@roadiehq/scaffolder-backend-argocd",
@@ -749,7 +749,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:266689fb512ce419f040ea6e72af64621f0a405eb1f0a87086e41e40e85ddd89"
+          "digest": "sha256:2e384cb7696fc19ebb120b28d707ead8b19aa7cc6c200dd956508d6cb75b7068"
         }
       },
       "package": "@roadiehq/scaffolder-backend-module-utils",
@@ -775,7 +775,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:4b8f61ff41ca8d51d0d74f7d4dcad153436d1084ceff622e690242ffbdfb071b"
+          "digest": "sha256:84356f0247dbb858ed57de05544ed3179e1c662c95cc6f7e95e06f5f976b4557"
         }
       },
       "package": "@backstage-community/plugin-scaffolder-backend-module-servicenow",
@@ -801,7 +801,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:9004005696cf08372393651706a1bd587af7063104b6c4fbdacbc6c9dc05e735"
+          "digest": "sha256:3560a09ed84803907aa6fb7ae6ed07978dc72df32435bd3b91b321077fe0658b"
         }
       },
       "package": "@backstage-community/plugin-scaffolder-backend-module-sonarqube",
@@ -827,7 +827,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:960f3bd1587f1ada5e335575c6556f37e773aa0fec4a565dc5e0886434fc75ed"
+          "digest": "sha256:b807443baaa66c2916d77b1c4a37562704ec8b8f97f96c8f83bc059f90ce8b0b"
         }
       },
       "package": "@backstage-community/plugin-sonarqube-backend",
@@ -853,7 +853,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ec07f0a9124514c9a2aec2dc03fc95960d3c3c75f6b012011d026efb4f957280"
+          "digest": "sha256:f596374db0082f279d43da7a620d73710597cfabcd057f162f740636f4b43e60"
         }
       },
       "package": "@backstage-community/plugin-sonarqube",
@@ -879,7 +879,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:8a48556a33919c3236c80cc4173aa839da6de288525d0cdad0e1eeb6db45f606"
+          "digest": "sha256:e8663548b9427429a89aa5cf25d5c884dee423daaa0bba2b1f642d6c34b49cbc"
         }
       },
       "package": "@backstage-community/plugin-tekton",
@@ -895,7 +895,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ac00bd65d14509f3a6206a311474e32e3bed3e92a342b324c56219b827925f5d"
+          "digest": "sha256:5c7aa7197d33bb5788e6d40245fcf6b25209bbf3e774ef12cae66d1b5bf292c8"
         },
         "dpdy": {
           "status": "skip"
@@ -917,7 +917,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:de54cf896fc99d2ac55fc958d2fe0d63d2a830b09517f65814641e74e9796e24"
+          "digest": "sha256:dcab0f4d71132d460b44e4bc64749e1ddbba9833ca70a0ebad17e2f787d161fb"
         },
         "dpdy": {
           "status": "skip"
@@ -939,7 +939,7 @@
         },
         "image-metadata-fetch": {
           "status": "pass",
-          "digest": "sha256:ba81ddaf581ef222bbe5c5f0410f30af12bbcdd3f792211f43aa293edfc8b437"
+          "digest": "sha256:2388b5c472564e310cb0261bea05e051a56342cb2a56947456e6083a229efa19"
         },
         "dpdy": {
           "status": "skip"
